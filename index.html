@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website Jual Beli Barang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MARKETPLACE</h1>
+    <h3>Situs jual beli praktis dan mudah</h3>
+    <button id="upload-button">Upload produk kamu!</button>
+  </header>
+
+  <section class="product-list">
+    <!-- Daftar produk akan dimasukkan di sini oleh JavaScript -->
+  </section>
+
+  <footer>
+    <p>Halaman <span id="page-number">1</span></p>
+  </footer>
+
+  <!-- Modal untuk Upload Produk -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Upload Produk</h2>
+      <form id="product-form">
+        <label for="product-image">Upload Gambar:</label>
+        <input type="file" id="product-image" accept="image/*" required>
+        <label for="product-title">Nama Produk:</label>
+        <input type="text" id="product-title" required>
+        <label for="product-description">Deskripsi Produk:</label>
+        <textarea id="product-description" required></textarea>
+        <label for="seller-contact">Nomor HP Penjual:</label>
+        <input type="text" id="seller-contact" required>
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
